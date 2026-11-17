@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="tei2slide.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:x="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Concevoir un projet d’edition numérique</title>
+                <title type="subtitle">Éditer, analyser, publier</title>
+                <author>Josselin Morvan (université de Rouen Normandie)</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Document nativement numérique</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Document nativement numérique</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="lesson">
+                <div type="slide" rend="titlePage">
+                    <head>Concevoir un projet d’édition numérique</head>
+                    <p>Éditer, analyser, publier</p>
+                    <p>Sandra Provini <lb/>Josselin Morvan</p>
+                </div>
+                <div type="slide">
+                    <head>TEI vers HTML</head>
+                    <figure>
+                        <graphic url="xsltprocessor.jpg"/>
+                        <figDesc>Transformation XSLT</figDesc>
+                    </figure>
+                </div>
+                <div type="slide">
+                    <head>Publication web</head>
+                    <figure>
+                        <graphic url="publicationWeb.jpg"/>
+                        <figDesc>Du manuscrit à la publication web</figDesc>
+                    </figure>
+                </div>
+                <div type="slide">
+                    <head>Publier des ressources XML-TEI</head>
+                    <list>
+                        <item>Analyse et conception d’une interface de consultation</item>
+                        <item>Maquettage et prototypage</item>
+                        <item>Transformation et mise en forme</item>
+                    </list>
+                </div>
+                <div type="slide" rend="titlePage">
+                    <head>Conception d’une interface de consultation</head>
+                </div>
+                <div type="slide">
+                    <head>Notion d’interface</head>
+                    <list>
+                        <item>l’interface participe à la construction du savoir</item>
+                        <item>elle n’est pas neutre : elle est le résultat de choix éditoriaux parfois forts</item>
+                        <item>elle propose une certaine représentation du texte</item>
+                        <item>elle rend visible ou invisibilise certains aspects</item>
+                    </list>
+                </div>
+                <div type="slide">
+                    <head>Concevoir une interface</head>
+                    <p>Partir des usages et des questions de recherche :</p>
+                    <list>
+                        <item>quel est l’objet que j’édite ?</item>
+                        <item>quel public ?</item>
+                        <item>que donne-t-on à lire ?</item>
+                        <item>quelles fonctionnalités ?</item>
+                        <item>quelle est la place du numérique ?</item>
+                    </list>
+                </div>
+                <div type="slide">
+                    <head>Les démonstrateurs : maquettes et prototypes</head>
+                    <p>Pourquoi maquetter ou prototyper ?</p>
+                    <list>
+                        <item>tester et (in)valider rapidement des hypothèses</item>
+                        <item>se concentrer sur le fond (interactions, fonctionnalités, contenus, etc.)</item>
+                        <item>faire réagir les utilisateurs</item>
+                        <item>éviter les développements inutiles</item>
+                    </list>
+                </div>
+                <div type="slide">
+                    <head>Maquette ≠ prototype</head>
+                    <p>Une <hi rend="bold">maquette</hi> prend en compte la <emph>dimension interactive</emph> (navigation, fonctionnalités, etc.) (UI/UX) et peut intégrer le <emph>design</emph></p>
+                    <p>Un <hi rend="bold">prototype</hi> est une <emph>application fonctionnelle</emph> qui se focalise sur le fond et les technologies employées.</p>
+                    <p>Un <hi rend="bold">prototype</hi> est généralement <emph>unique</emph> (qu'il soit jetable ou évolutif), alors que les <hi rend="bold">maquettes</hi> peuvent être <emph>multiples</emph>.</p>
+                    <list>
+                        <item>Une maquette de voiture s’expose…</item>
+                        <item>…un prototype de voiture roule !</item>
+                    </list>
+                </div>
+                <div type="slide">
+                    <head>Exemple</head>
+                    <figure>
+                        <graphic url="maquetteEcrisoi.png"/>
+                        <figDesc>Maquette Figma de la plateforme <ref target="https://ecrisoi.univ-rouen.fr/">EcriSoi</ref></figDesc>
+                    </figure>
+                </div>
+                <div type="slide">
+                    <head>Les outils</head>
+                    <list>
+                        <item>Un papier et un crayon !</item>
+                        <item>Inkscape / Adobe / Affinity</item>
+                        <item><ref target="https://www.figma.com/fr-fr/">Figma</ref> (en ligne et gratuit pour les étudiants)</item>
+                        <item><ref target="https://penpot.app/">Penpot</ref> (en ligne)</item>
+                        <item>Powerpoint / Google Slide / Keynote</item>
+                    </list>
+                </div>
+                <div type="slide">
+                    <head>Exemples d’éditions critiques</head>
+                    <list>
+                        <item>MRSH de Caen <ref target="https://mrsh.unicaen.fr/pluridisciplinaire/pole-document-numerique/projets-et-realisations/">Projets et réalisations</ref></item>
+                        <item><ref target="https://irihs.huma-num.fr/amboise/">Œuvres complètes de Michel d’Amboise</ref></item>
+                        <item>EADH <ref target="https://eadh.org/projects/catalogue-digital-editions">Catalogue of Digital Editions</ref></item>
+                        <item><ref target="https://chfontaine.huma-num.fr/">Édition des œuvres de Charles Fontaine</ref></item>
+                        <item><ref target="https://crenum.elan-numerique.fr/">La Chronique française de Guillaume Cretin</ref></item>
+                        <item><ref target="http://wjc.bodleian.ox.ac.uk/">The Wandering Jew's Chronicle</ref></item>
+                    </list>
+                </div>
+                <div type="slide">
+                    <head>Exercice (en groupe)</head>
+                    <p>Choisissez une édition électronique de votre choix et réalisez un petit compte rendu critique (très rapide), en analysant les choix éditoriaux, son organisation, les fonctionnalités ou encore les modes de consultation et parcours de lecture proposés.</p>
+                    <p>Pour l’édition de votre épître, vous avez défini des choix éditoriaux (établissement du texte, encodage, etc.), mais que souhaitez-vous proposer pour votre édition web ?</p>
+                    <list>
+                        <item>édition diplomatique ? édition régularisée ? les deux ? selon quelles modalités ?</item>
+                        <item>et les images ?</item>
+                        <item>avec ou sans notes ? en bas de page, au survol ?</item>
+                        <item>et que faire des métadonnées ?</item>
+                        <item>Faut-il indiquer des mentions légales ?</item>
+                    </list>
+                    <p>Pour vous aider, essayez de réaliser une maquette rapide de votre édition (<emph>zoning</emph>), afin d’agencer vos contenus et de réfléchir aux interactions possibles.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
