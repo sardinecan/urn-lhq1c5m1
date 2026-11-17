@@ -44,7 +44,7 @@
                 <head>
                     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" charset="utf8"/>
                     <title><xsl:apply-templates select="$title"></xsl:apply-templates></title>
-                    <link rel="stylesheet" href="../assets/css/main.css" type="text/css"/>
+                    <link rel="stylesheet" href="{$assets}css/main.css" type="text/css"/>
                     <model xmlns="http://www.w3.org/2002/xforms">
                         <instance id="tutorial">
                             <tutorial>
@@ -144,7 +144,7 @@
                 <head>
                     <meta charset="utf-8"/>
                     <title><xsl:apply-templates select="$title"/></title>
-                    <link rel="stylesheet" href="../assets/css/main.css" type="text/css"/>
+                    <link rel="stylesheet" href="{$assets}css/main.css" type="text/css"/>
                     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css" integrity="sha512-o5v54Kh5PH0dgnf9ei0L+vMRsbm5fvIvnR/XkrZZjN4mqdaeH7PW66tumBoQVIaKNVrLCZiBEfHzRY4JJSMK/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
                     <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@1.0.1/css/catppuccin-latte.css"/>
                     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark-reasonable.min.css" integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
@@ -182,12 +182,12 @@
                 <head>
                     <meta charset="utf-8"/>
                     <title><xsl:apply-templates select="$title"/></title>
-                    <link rel="stylesheet" href="../assets/css/main.css" type="text/css"/>
-                    <link rel="stylesheet" href="../assets/css/tei.css" type="text/css"/>
+                    <link rel="stylesheet" href="{$assets}css/main.css" type="text/css"/>
+                    <link rel="stylesheet" href="{$assets}css/tei.css" type="text/css"/>
                     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark-reasonable.min.css" integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
                     <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@1.0.1/css/catppuccin-latte.css"/>
                     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js">/**/</script>
-                    <script src="../assets/js/generateid.js"/>
+                    <script src="{$assets}js/generateid.js"/>
                     <xsl:apply-templates select="tei:div[@type='model']"/>
                 </head>
                 <body>
