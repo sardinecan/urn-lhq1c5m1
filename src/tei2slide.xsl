@@ -26,7 +26,7 @@
     
     <xsl:template match="tei:TEI" mode="form">
         <xsl:result-document href="{$path}/index.xhtml">
-            <xsl:processing-instruction name="xml-stylesheet" >href="<xsl:value-of select="$assets || xsltforms/xsltforms.xsl"/>" type="text/xsl"</xsl:processing-instruction>
+            <xsl:processing-instruction name="xml-stylesheet" >href="<xsl:value-of select="$assets || 'xsltforms/xsltforms.xsl'"/>" type="text/xsl"</xsl:processing-instruction>
             <html
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://www.w3.org/1999/xhtml"
@@ -165,7 +165,7 @@
             <xsl:number count="tei:div[@type='slide']" from="tei:body" level="any"/>
         </xsl:variable>
         <xsl:result-document href="{$path}/slide{$n}.xhtml">
-            <xsl:processing-instruction name="xml-stylesheet" >href="<xsl:value-of select="$assets || xsltforms/xsltforms.xsl"/>" type="text/xsl"</xsl:processing-instruction>
+            <xsl:processing-instruction name="xml-stylesheet" >href="<xsl:value-of select="$assets || 'xsltforms/xsltforms.xsl'"/>" type="text/xsl"</xsl:processing-instruction>
             <html
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:xf="http://www.w3.org/2002/xforms"
